@@ -46,6 +46,7 @@ func main() {
 	fmt.Println(result)
 
 	// now lets get some value from console
+	// using var keyword with explicit type declaration
 	var input string
 	fmt.Println("Enter your name: ")
 	fmt.Scanln(&input)
@@ -61,7 +62,7 @@ func main() {
 
 	// now lets get some numbers
 	fmt.Print("Can you give me some random number: ")
-	// note I'm reusing color variable, so no ':='
+	// note I'm reusing color variable, so no ':=' implicit declaration
 	color, _ = reader.ReadString('\n')
 	// remove spaces
 	color = strings.TrimSpace(color)
